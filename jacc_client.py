@@ -9,12 +9,10 @@ app = Flask(__name__)
 # blockchain = Blockchain(wallet.public_key)
 CORS(app)
 
-
 @app.route('/client/', methods=['GET'])
 def index_client():
 	# return render_template('./index_client.html')
     return send_from_directory('templates', 'index_client.html')
-
 
 @app.route('/server/', methods=['GET'])
 def index_server():
