@@ -1,0 +1,26 @@
+MSG - Server started at port:3200
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+201 - {'message': 'Block added succesfully', 'block': {'index': 1, 'previous_hash': 'c775ae7455f086e2fc68520d31bfebfdb18ffeaceb933085c510d5f8d2177813', 'transactions': [{'sender': 'MINING', 'recipient': '30819f300d06092a864886f70d010101050003818d0030818902818100bace64f949558485d1c17916c19bcb888f9bf07e931dc4a0a0ca652b8b216c94932d38008058af03aa3d4aee15bf6b43d3dc8f19aab333bcacda5bf92c64575788e7e18964fb6bddd07003a5cb2a26c1acb1f5925e7128d2bab1bda886676a337d6e61cd77395921e65e7694941266f2f94b9634586ad8faf85f744b3eb31bdd0203010001', 'amount': 10, 'signature': ''}], 'timestamp': 1552346706.051931, 'proof': 92}, 'funds': 10} 
+MSG - {'node': 'http://127.0.0.1:3201'}
+MSG - 192.168.0.95:3200
+500 - <Response [500]> 
+MSG - {'node': '192.168.0.95:3203'}
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - <Response [200]>
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - <Response [200]>
+MSG - Server started at port:3200
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - Server started at port:3200
+MSG - Server started at port:3200
+200 - {'message': 'Chain was replaced..'} 
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - <Response [200]>
+MSG - <Response [200]>
+201 - {'message': 'Block added succesfully', 'block': {'index': 8, 'previous_hash': 'c554a91b17048bdfd615822dab4faf08d6c3e9da857fcc32d6c19eafd530f546', 'transactions': [{'sender': 'MINING', 'recipient': '30819f300d06092a864886f70d010101050003818d0030818902818100bace64f949558485d1c17916c19bcb888f9bf07e931dc4a0a0ca652b8b216c94932d38008058af03aa3d4aee15bf6b43d3dc8f19aab333bcacda5bf92c64575788e7e18964fb6bddd07003a5cb2a26c1acb1f5925e7128d2bab1bda886676a337d6e61cd77395921e65e7694941266f2f94b9634586ad8faf85f744b3eb31bdd0203010001', 'amount': 10, 'signature': ''}], 'timestamp': 1552347171.98662, 'proof': 551}, 'funds': 10} 
+MSG - Server started at port:3200

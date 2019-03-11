@@ -1,0 +1,22 @@
+MSG - Server started at port:3203
+MSG - {'node': '192.168.0.95:3201'}
+MSG - {'node': 'http://127.0.0.1:3200'}
+MSG - 192.168.0.95:3203
+500 - <Response [500]> 
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - blockchain.resolve_conflicts=False
+MSG - Server started at port:3203
+200 - {'message': 'Local chain kept..'} 
+MSG - Server started at port:3203
