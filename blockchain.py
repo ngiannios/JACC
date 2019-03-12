@@ -216,7 +216,7 @@ class Blockchain:
             None
         Log.log_message(Misc.get_IP(self.node_id), self.node_id)
         try: 
-            local_http_addr = 'http://{}:{}'.format(Misc.get_IP, self.node_id)
+            local_http_addr = 'http://{}:{}'.format(Misc.get_IP(self.node_id), self.node_id)
             response = requests.post(url, json={'node': local_http_addr})
             Log.log_error(response.status_code, response, self.node_id)
         except requests.exceptions.ConnectionError:
