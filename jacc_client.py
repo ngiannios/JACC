@@ -342,6 +342,7 @@ def add_node():
         Log.log_error(401, response, port)
         return jsonify(response), 401
     node = values.get('node')
+    
     blockchain.add_peer_node(node)
     response = {
         'message': 'Node added succesfully.',

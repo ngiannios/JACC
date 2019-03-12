@@ -203,7 +203,7 @@ class Blockchain:
         return replace
 
     def add_peer_node(self, new_node):
-        self.__peer_nodes.add(new_node)
+        # self.__peer_nodes.add(new_node)
         # get all the peer nodes of the added node
         url = '{}/node'.format(new_node)
         try:
@@ -213,14 +213,17 @@ class Blockchain:
                 self.__peer_nodes.add(peer_node)
         except requests.exceptions.ConnectionError:
             Log.log_error(requests.exceptions.ConnectionError, 'ConnectionError', self.node_id)
-            None
-        Log.log_message(Misc.get_IP(self.node_id), self.node_id)
-        try: 
-            local_http_addr = 'http://{}:{}'.format(Misc.get_IP(self.node_id), self.node_id)
-            response = requests.post(url, json={'node': local_http_addr})
-            Log.log_error(response.status_code, response, self.node_id)
-        except requests.exceptions.ConnectionError:
-            None
+            
+        Log.log_message(Misc.get_Public_IP(self.node_id), self.node_id)
+        # if count == 0:
+        #     try: 
+        #         local_http_addr = 'http://{}:{}'.format(Misc.get_Public_IP(self.node_id), self.node_id)
+        #         response = requests.post(url, json={'node': local_http_addr, 'count': 1})
+        #         Log.log_error(response.status_code, response, self.node_id)
+        #     except requests.exceptions.ConnectionError:
+        #         None
+        
+        self.__peer_nodes.add(new_node)
         self.save_data()
 
     def remove_peer_node(self, node):
