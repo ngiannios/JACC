@@ -322,6 +322,10 @@ def resolve_conflicts():
 
 @app.route('/chain', methods=['GET'])
 def get_chain():
+    if blockchain.public_key is None:
+        load_keys_return = load_keys()
+        if load_keys_return[1] is not 201:
+            return load_keys_return
     chain_snapshot = blockchain.chain
     dict_chain = [block.to_json() for block in chain_snapshot]
     return jsonify(dict_chain), 200
