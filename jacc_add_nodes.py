@@ -13,7 +13,7 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     port = args.port
-    IP_Address = Misc.get_IP(port)
+    IP_Address = Misc.get_Public_IP(port)
     
     if args.nodeUrl is not '':    
         node_Url = args.nodeUrl
