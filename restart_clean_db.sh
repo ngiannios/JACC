@@ -12,6 +12,7 @@ python3 jacc_client.py -p 83 &
 python3 jacc_client.py -p 84 &
 python3 jacc_client.py -p 85 &
 
+python3 jacc_add_nodes.py -p 80 --nodePort 80
 python3 jacc_add_nodes.py -p 80 --nodePort 81
 python3 jacc_add_nodes.py -p 80 --nodePort 82
 python3 jacc_add_nodes.py -p 80 --nodePort 83
