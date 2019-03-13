@@ -16,7 +16,7 @@ then
   for pid in $(echo "${killables}" | awk '{print $2}')
   do
     echo killing $pid "..."
-    kill $pid 
+    kill -9 $pid 
     echo $pid killed
   done
 fi
